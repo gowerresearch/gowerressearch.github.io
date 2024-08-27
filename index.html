@@ -6,7 +6,7 @@
     <title>My One-Page Website</title>
     <style>
         body {
-            font-family: Ubuntu, sans-serif;
+            font-family: opensans, sans-serif;
             margin: 0;
             padding: 0;
         }
@@ -41,21 +41,64 @@
         nav a:hover {
             text-decoration: underline;
         }
+        section-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+            max-width: 1200px;
+        margin: 0 auto;
+        background-color: #fff;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        text-column {
+            flex: 2;
+            padding-right: 20px;
+        }
+
+        text-column p {
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        image-column {
+            flex: 1;
+            text-align: center;
+        }
+
+        image-column img {
+            max-width: 100%;
+            height: auto;
+            vertical-align: middle;
+        }
     </style>
 </head>
 <body>
     <nav>
-        <a href="#section1">Home</a>
-        <a href="#section2">About</a>
-        <a href="#section3">Services</a>
-        <a href="#section4">Contact</a>
+        <a href="#section1">Research</a>
+        <a href="#section2">Evaluation</a>
+        <a href="#section3">About us</a>
+        <a href="#section4">Contact us</a>
     </nav>
 
 
     <section id="section1">
-        <h1>Welcome to My Website</h1>
-        <p>Your journey to success starts here. Explore our services and find out how we can help you achieve your goals.</p>
+    <div class="section-container">
+        <div class="text-column">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. 
+                Cras venenatis euismod malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.
+            </p>
+        </div>
+        <div class="image-column">
+            <img src="https://via.placeholder.com/300" alt="Placeholder Image">
+        </div>
+    </div>
     </section>
+
+
     <section id="section2">
         <h1>About Us</h1>
         <p>We are a passionate team of professionals dedicated to delivering top-notch solutions for our clients. With years of experience in the industry, we specialize in transforming your ideas into reality.</p>
